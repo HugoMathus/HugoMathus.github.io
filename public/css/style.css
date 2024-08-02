@@ -14,6 +14,27 @@ head {
   
 }
 
+/* Estilo del enlace para que no parezca un enlace tradicional */
+.header-link {
+  text-decoration: none;  /* Sin subrayado */
+  color: inherit;         /* Mantener el color del texto del padre */
+}
+
+/* Evitar que el enlace visitado cambie de color */
+.header-link:visited {
+  color: inherit;
+}
+
+/* Opcional: Cambiar el color al pasar el mouse por encima */
+.header-link:hover {
+  color: #000; /* Cambia este color según tus necesidades */
+}
+
+/* Opcional: Cambiar el color cuando el enlace está activo (clic) */
+.header-link:active {
+  color: #555; /* Cambia este color según tus necesidades */
+}
+
 .header-content {
     border-color: black;
     border-width: 1px;
