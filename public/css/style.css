@@ -1,23 +1,26 @@
 body {
-    font-family: cursive;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    background:#ffe4b6;
-    background-size: cover; 
+  margin: 0;
+  padding: 0;
+  
+  background:#ece4d5;
+  background-size: cover; 
 }
 
 head {
   border-color: black;
   border-width: 1px;
-  
-  
+  height: 15px;
+  background-color: white;
 }
 
 /* Estilo del enlace para que no parezca un enlace tradicional */
 .header-link {
+  font-weight:bolder;
+  font-family: cursive;
+  font-size: 30px;
   text-decoration: none;  /* Sin subrayado */
-  color: inherit;         /* Mantener el color del texto del padre */
+  color: rgb(255, 27, 255);   /* Mantener el color del texto del padre */
+  font-weight: bold;      
 }
 
 /* Evitar que el enlace visitado cambie de color */
@@ -42,10 +45,74 @@ head {
     display: flex;
     justify-content: left; /* Centra los elementos horizontalmente */
     align-items: center; /* Centra los elementos verticalmente */
+    height: 54px;
+    background-color: white;
 }
 
+/* Contenedor del carrusel */
+.carousel-container {
+  width: 100%;        /* Ajusta el ancho del contenedor al 100% del contenedor padre */
+  height: 10%;       /* La altura se ajustará al tamaño de la imagen */
+  overflow: hidden;   /* Oculta el contenido que se desborda */
+  display: flex;      /* Usa flexbox para centrar las imágenes */
+  align-items: center;/* Centra las imágenes verticalmente */
+  justify-content: center; /* Centra las imágenes horizontalmente */
+}
 
+/* Estilo para cada diapositiva */
+.mySlides {
+  display: none;      /* Oculta las imágenes por defecto */
+}
 
+/* Estilo para las imágenes dentro del carrusel */
+.mySlides img {
+  max-width: 100%;    /* Asegura que la imagen no exceda el ancho del contenedor */
+  max-height: 100vh;  /* Asegura que la imagen no exceda la altura de la ventana */
+  display: block;     /* Evita el espacio debajo de la imagen */
+}
+
+/* Indicadores del carrusel */
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 main {
     padding: 2rem;
 }
@@ -122,7 +189,7 @@ main {
   
   /* The button used to open the sidebar */
   .openbtn {
-    font-size: 30px;
+    font-size: 20px;
     cursor: pointer;
     background-color: #11111100;
     color: black;
