@@ -1,14 +1,16 @@
 const express = require("express");
+const path = require("path");
 const app = express();
-puerto = 3000;
+const puerto = 3000;
 
-app.use(express.static('public')) // Servir archivos estaticos desde la carpeta "public"
+// Configurar la carpeta 'public' para servir archivos estáticos
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', (req,res) => {
-    res.sendFile(__dirname + '/index.html');
+// Ruta principal para servir el archivo index.html
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(puerto, ()=>{
-    console.log('servidor en puerto ${puerto}')
+app.listen(puerto, () => {
+    console.log(`Servidor en puerto ${puerto}`);
 });
-
