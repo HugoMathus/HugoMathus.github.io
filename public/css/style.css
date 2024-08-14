@@ -2,9 +2,31 @@ body {
   margin: 0;
   padding: 0;
   
-  background:#ece4d5;
+  background:#ffffff;
   background-size: cover; 
 }
+
+/*fuente*/
+
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
 
 head {
   border-color: black;
@@ -16,10 +38,12 @@ head {
 /* Estilo del enlace para que no parezca un enlace tradicional */
 .header-link {
   font-weight:bolder;
-  font-family: cursive;
-  font-size: 30px;
+  font-family: "Libre Baskerville";
+  font-style: italic;
+  font-size: 40px;
+  font-weight: 400;
   text-decoration: none;  /* Sin subrayado */
-  color: rgb(255, 27, 255);   /* Mantener el color del texto del padre */
+  color: rgb(253, 89, 253);   /* Mantener el color del texto del padre */
   font-weight: bold;      
 }
 
@@ -212,3 +236,37 @@ main {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
+
+  footer {
+    background-color: #111; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 20px;
+    text-align: center;
+    font-family: "Libre Baskerville";
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-content a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-content .icon {
+    width: 24px; /* Tamaño del icono */
+    height: 24px;
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+  }
+  
+  .footer-content a:hover {
+    color: #ff7b00; /* Cambia el color al pasar el ratón */
+  }
+  
