@@ -1,0 +1,223 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/fondobuild.jpg');
+    background-size: cover; /* Hace que la imagen cubra toda la página */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Asegura que el fondo cubra toda la altura de la ventana */
+}
+
+.container {
+    flex: 1; /* Esto hace que el contenedor crezca y ocupe el espacio disponible */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.design-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-image {
+    margin-right: 30px;
+}
+
+.main-image img {
+    width: 400px;
+    height: auto;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+  
+  /*fuente*/
+  
+  .libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  h1 {
+    text-align: center;
+    font-weight:bolder;
+    font-family: "Libre Baskerville", serif;
+    font-style: italic;
+  }
+  
+  head {
+    border-color: black;
+    border-width: 1px;
+    height: 15px;
+    background-color: rgb(255, 0, 234);
+  }
+  
+  /* Estilo del enlace para que no parezca un enlace tradicional */
+  .header-link {
+    font-weight:bolder;
+    font-family: "Libre Baskerville", serif;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: 400;
+    text-decoration: none;  /* Sin subrayado */
+    color: rgb(253, 89, 253);   /* Mantener el color del texto del padre */
+    font-weight: bold;      
+  }
+  
+  /* Evitar que el enlace visitado cambie de color */
+  .header-link:visited {
+    color: inherit;
+  }
+  
+  /* Opcional: Cambiar el color al pasar el mouse por encima */
+  .header-link:hover {
+    color: #000; /* Cambia este color según tus necesidades */
+  }
+  
+  /* Opcional: Cambiar el color cuando el enlace está activo (clic) */
+  .header-link:active {
+    color:rgb(253, 89, 253); /* Cambia este color según tus necesidades */
+  }
+  
+  .header-content {
+      border-color: black;
+      border-width: 1px;
+      border-style: solid;
+      display: flex;
+      justify-content: left; /* Centra los elementos horizontalmente */
+      align-items: center; /* Centra los elementos verticalmente */
+      height: 54px;
+      background-color: rgb(255, 210, 255);
+  }
+  
+
+  /* The sidebar menu */
+  .sidebar {
+      height: 100%; /* 100% Full-height */
+      width: 0; /* 0 width - change this with JavaScript */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Stay on top */
+      top: 0;
+      left: 0;
+      background-color: #111; /* Black*/
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 60px; /* Place content 60px from the top */
+      transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    }
+    
+    /* The sidebar links */
+    .sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    /* When you mouse over the navigation links, change their color */
+    .sidebar a:hover {
+      color: #ffbdfc;
+    }
+    
+    /* Position and style the close button (top right corner) */
+    .sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    /* The button used to open the sidebar */
+    .openbtn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #11111100;
+      color: black;
+      padding: 10px 15px;
+      border: none;
+    }
+    
+    .openbtn:hover {
+      background-color: #6c4d66;
+    }
+    
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    #main {
+      transition: margin-left 1.0s; /* If you want a transition effect */
+      padding: 20px;
+    }
+    
+    
+  
+    footer {
+      background-color: #111; /* Color de fondo */
+      color: white; /* Color del texto */
+      padding: 10px 0;
+      text-align: center;
+      font-family: "Libre Baskerville";
+      width: 100%;
+    }
+    
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .footer-content a {
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .footer-content .icon {
+      width: 24px; /* Tamaño del icono */
+      height: 24px;
+      margin-right: 10px; /* Espacio entre el icono y el texto */
+    }
+    
+    .footer-content a:hover {
+      color: #ff7b00; /* Cambia el color al pasar el ratón */
+    }
+    

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale = 1.0">
-    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/buildstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -12,20 +12,38 @@
 </head>
 <body>
   <div class = "header-content">
-      
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="build.html">Build</a>
         <a href="frases.html">Frases</a>
         <a href="imagenes.html">Imágenes</a>
         <a href="dobles.html">Doble</a>
-      </div>
-      
-      <div id="main">
+    </div>     
+    <div id="main">
         <button class="openbtn" onclick="openNav()">&#9776;</button>
-      </div>
+    </div>
+  
     <h1><a href="index.html" class="header-link">polemica.gt</a></h1>
   </div>
+  <div class="container">
+    <h1>BUILD YOUR OWN POLEMICA SHIRT</h1>
+    <div class="design-container">
+        <div class="main-image">
+            <img id="displayed-image" src="/publicimages/build1.png" alt="Blank Shirt">
+        </div>
+        <div class="gallery">
+            <img class="gallery-image" src="/publicimages/build2.png" alt="Design infront" onclick="changeImage('images/build1.png')">
+            <img class="gallery-image" src="/publicimages/build3.png" alt="Design on Chest" onclick="changeImage('images/build3.png')">
+            <img class="gallery-image" src="/publicimages/build4.png" alt="Design on Back" onclick="changeImage('images/build4.png')">
+        </div>
+    </div>
+  </div>
+<script src="/public/JavaScript/buildscript.js"></script>
+
+
+
+
+
   <script src="/public/JavaScript/script.js"></script>
 </body>
 <footer>
