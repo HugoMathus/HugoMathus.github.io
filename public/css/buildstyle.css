@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-image: url('/images/fondobuild.jpg');
+    background-image: url('/public/images/fondobuild.jpg');
     background-size: cover; /* Hace que la imagen cubra toda la página */
     background-position: center; /* Centra la imagen en el fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
